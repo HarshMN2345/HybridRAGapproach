@@ -1,3 +1,5 @@
+import os
+from dotenv import load_dotenv
 from transformers import pipeline
 from neo4j import GraphDatabase
 import spacy
@@ -9,9 +11,9 @@ ner_pipeline = pipeline("ner", model="dbmdz/bert-large-cased-finetuned-conll03-e
 nlp = spacy.load("en_core_web_sm")
 
 # Neo4j Database connection details
-NEO4J_URI = 'neo4j+s://c6ed691d.databases.neo4j.io'
-NEO4J_USERNAME = 'neo4j'
-NEO4J_PASSWORD = 't39OZ--lfre3rSJ8ES9prmhgvMO7xjryB09rPieEIlU'
+NEO4J_URI = os.getenv('NEO4J_URI')
+NEO4J_USERNAME = os.getenv('NEO4J_USERNAME')
+NEO4J_PASSWORD = os.getenv('NEO4J_PASSWORD')
 
 # Initialize Neo4j driver
 driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USERNAME, NEO4J_PASSWORD))
