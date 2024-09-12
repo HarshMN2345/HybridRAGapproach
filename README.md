@@ -39,8 +39,8 @@ The project consists of the following Python scripts:
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/yourusername/your-repository.git
-    cd your-repository
+    git clone https://github.com/HarshMN2345/HybridRAGapproach
+    Activate python env
     ```
 
 2. **Install Dependencies**:
