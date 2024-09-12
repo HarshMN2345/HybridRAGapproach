@@ -1,0 +1,12 @@
+dotenv
+llama_index
+neo4j
+pandas
+transformers
+spacy
+sentence_transformers
+torch
+torchvision
+llama_parse
+faiss
+streamlit
