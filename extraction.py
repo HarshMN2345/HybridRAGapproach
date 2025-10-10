@@ -9,7 +9,7 @@ load_dotenv()
 # Set up the parser with LlamaParse
 parser = LlamaParse(result_type="text")  # Extract plain text
 
-# Use SimpleDirectoryReader to parse the PDF file
+# Use SimpleDirectoryReader to parse the Pdf file
 file_extractor = {".pdf": parser}
 pdf_path = 'Test.pdf'  # Replace with your actual PDF path
 documents = SimpleDirectoryReader(input_files=[pdf_path], file_extractor=file_extractor).load_data()
