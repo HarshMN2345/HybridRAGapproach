@@ -74,7 +74,7 @@ The project consists of the following Python scripts:
 
 - **Enhanced Accuracy**: Combines retrieval with knowledge graph-based contextual understanding for more accurate responses.
 - **Contextual Understanding**: Utilizes the knowledge graph to provide deeper semantic insights and improved query handling.
-- **Improved Interaction**: Offers a natural and intuitive way to interact with complex document-based information.
+- **Improved Interaction**: Offers a natural and intuitive way to interact with complex document based information.
 
 ## Use Cases
 
